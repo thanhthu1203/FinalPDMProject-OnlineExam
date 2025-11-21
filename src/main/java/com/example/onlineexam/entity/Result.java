@@ -1,6 +1,6 @@
 package com.example.onlineexam.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "Result")
