@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Online Exam - Login</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <main class="page-center">
+    <div class="card login-card">
+      <h1>Student Login</h1>
+      <form id="loginForm">
+        <label for="studentId">Student ID</label>
+        <input id="studentId" name="studentId" required placeholder="s1001" />
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required />
+        <button type="submit" class="btn-primary">Login</button>
+        <div id="message" class="message"></div>
+      </form>
+      <p style="margin-top:10px;color:#334">Or go to <a href="/admin.html">admin panel</a> (admins only)</p>
+    </div>
+  </main>
+
+  <script src="/js/login.js"></script>
+</body>
+</html>
