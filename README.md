@@ -36,10 +36,6 @@
 
 ### To Use
 
-1. Open folder src/main
-2. Continue click java folder
-3. Choose control/lms
-4. Select Main.java and run the program
 
 
 ## Project Report: [Report]()
