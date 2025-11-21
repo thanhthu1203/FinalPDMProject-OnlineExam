@@ -26,16 +26,8 @@
 
 ### Prerequisites
 
-* Windows 10 or 11
 * ***For development:***
-    * [IDE: IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows)
-    * [Programming Language](https://www.java.com/en/)
-    * [JDK version: JDK 17](https://www.oracle.com/java/technologies/downloads/)
-    * [Git](https://git-scm.com/downloads)
-    * [JDBC Driver for SQL Server](https://learn.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver16)
-    * [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-    * [JavaFx](https://openjfx.io/)
-  
+    
 ### Installation
 
 * Clone the repo
