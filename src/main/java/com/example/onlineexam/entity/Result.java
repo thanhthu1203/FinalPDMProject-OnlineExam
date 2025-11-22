@@ -1,8 +1,12 @@
 package com.example.onlineexam.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter //dont worry these things make code more clean that all
 @Table(name = "Result")
 public class Result {
 
@@ -23,7 +27,7 @@ public class Result {
     private Integer score;
 
     // Getters and setters
-
+    /*
     public Long getResultId() {
         return resultId;
     }
@@ -54,5 +58,5 @@ public class Result {
 
     public void setScore(Integer score) {
         this.score = score;
-    }
+    }*/
 }

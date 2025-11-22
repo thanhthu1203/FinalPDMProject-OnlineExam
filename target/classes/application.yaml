@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  error:
+    include_message: always
+    include-binding-errors: always
+                                    # change your database name here
+spring:                             #       ||
+  datasource:                       #       V
+    url: jdbc:mysql://localhost:3306/online_exam_db   #url here keepin mind changing this
+    username: root                                       #your sql username mostly root
+    password: giathinh@0612                                   #password to accesdatabase
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto:
+    show-sql: true
