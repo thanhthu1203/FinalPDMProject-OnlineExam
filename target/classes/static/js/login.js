@@ -1,4 +1,4 @@
-document.getElementById('loginForm').addEventListener('submit', async function(e) {
+/*document.getElementById('loginForm').addEventListener('submit', async function(e) {
   e.preventDefault();
 
   const studentId = document.getElementById('studentId').value.trim();
@@ -49,4 +49,4 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     console.error('Login error:', error);
     msg.textContent = 'Connection error. Please check if the server is running.';
   }
-});
+});*/

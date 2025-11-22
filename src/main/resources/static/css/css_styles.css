@@ -1,4 +1,4 @@
-:root{
+/*(:root{
   --primary:#0b63d6;
   --accent:#0b8bf0;
   --muted:#6c7a89;
@@ -10,15 +10,15 @@
 
 body{background:var(--bg);margin:0;color:#163b5a}
 .container{max-width:1100px;margin:0 auto;padding:20px}
-
-/* Top bar */
+/*
+/* Top bar
 .topbar{background:linear-gradient(90deg,var(--primary),var(--accent));color:white;padding:14px 0}
 .topbar h2{margin:0 20px;font-weight:600}
 
-/* Card */
+/* Card
 .card{background:var(--card);border-radius:8px;padding:18px;box-shadow:0 6px 18px rgba(10,40,80,0.06);margin:18px 0}
 
-/* Login page */
+/* Login page
 .page-center{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
 .login-card{width:100%;max-width:420px;text-align:left}
 .login-card h1{margin:0 0 14px;font-size:22px}
@@ -27,20 +27,20 @@ body{background:var(--bg);margin:0;color:#163b5a}
 .btn-primary{display:inline-block;margin-top:16px;padding:10px 14px;background:var(--primary);color:white;border:none;border-radius:6px;cursor:pointer}
 .message{margin-top:12px;color:#b00020}
 
-/* Table */
+/* Table
 .table-responsive{overflow-x:auto}
 .exam-table{width:100%;border-collapse:collapse}
 .exam-table th, .exam-table td{padding:12px;border-bottom:1px solid #eef3fb;text-align:left}
 .exam-table th{background:linear-gradient(180deg,#f7fbff,#eef7ff);color:var(--primary);font-weight:600}
 
-/* Badges */
+/* Badges
 .badge{display:inline-block;padding:6px 8px;border-radius:999px;font-size:13px;color:white}
 .badge.green{background:#28a745}
 .badge.blue{background:var(--primary)}
 .score-pill{background:#f1f8ff;color:var(--primary);padding:6px 8px;border-radius:6px;font-weight:600}
 
-/* Responsive adjustments */
+/* Responsive adjustments
 @media (max-width:600px){
   .exam-table th, .exam-table td{padding:10px;font-size:13px}
   .topbar h2{font-size:16px}
-}
+}*/
