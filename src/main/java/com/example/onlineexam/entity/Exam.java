@@ -1,11 +1,16 @@
 package com.example.onlineexam.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "Exam")
 public class Exam {
 
@@ -34,7 +39,7 @@ public class Exam {
 
     // Getters and setters
 
-    public String getExamId() {
+   /* public String getExamId() {
         return examId;
     }
 
@@ -88,5 +93,5 @@ public class Exam {
 
     public void setStudents(Set<Student> students) {
         this.students = students;
-    }
+    }*/
 }

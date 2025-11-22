@@ -1,8 +1,12 @@
 package com.example.onlineexam.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "Admin")
 public class Admin {
 
@@ -13,11 +17,12 @@ public class Admin {
     @Column(name = "Password")
     private String password;
 
-    @Column(name = "OnlineWeb_W_ID")
-    private String onlineWebWId;
+    @ManyToOne
+    @JoinColumn(name = "OnlineWeb_W_ID")
+    private OnlineWeb onlineWeb;
 
     // Getters and setters
-    public String getAdminId() {
+    /*public String getAdminId() {
         return adminId;
     }
 
@@ -39,5 +44,5 @@ public class Admin {
 
     public void setOnlineWebWId(String onlineWebWId) {
         this.onlineWebWId = onlineWebWId;
-    }
+    }*/
 }

@@ -1,10 +1,16 @@
 package com.example.onlineexam.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "Course")
 public class Course {
 
@@ -18,9 +24,16 @@ public class Course {
     @OneToMany(mappedBy = "course")
     private Set<Exam> exams = new HashSet<>();
 
+    // Relationship: Many Courses <-> Many Students
+    @ManyToMany(mappedBy = "courses")
+    private List<Student> students;
+
+    @ManyToOne
+    @JoinColumn(name = "OnlineWeb_W_ID")
+    private OnlineWeb onlineWeb;
     // Getters and setters
 
-    public String getCourseId() {
+   /* public String getCourseId() {
         return courseId;
     }
 
@@ -42,5 +55,5 @@ public class Course {
 
     public void setExams(Set<Exam> exams) {
         this.exams = exams;
-    }
+    }*/
 }

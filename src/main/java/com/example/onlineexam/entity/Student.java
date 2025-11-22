@@ -3,10 +3,16 @@ package com.example.onlineexam.entity;
 import jakarta.persistence.Entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "Student")
 public class Student {
 
@@ -31,8 +37,20 @@ public class Student {
     )
     private Set<Exam> exams = new HashSet<>();
 
-    // Getters and setters
+    @ManyToMany
+    @JoinTable(
+            name = "student_has_course",
+            joinColumns = @JoinColumn(name = "Student_Student_ID"),
+            inverseJoinColumns = @JoinColumn(name = "Course_Course_ID")
+    )
+    private List<Course> courses;
+    // Relationship: One Student -> Many Results
+    @OneToMany(mappedBy = "student")
+    private List<Result> results;
+}
 
+    // Getters and setters
+   /*
     public String getStudentId() {
         return studentId;
     }
@@ -71,5 +89,4 @@ public class Student {
 
     public void setExams(Set<Exam> exams) {
         this.exams = exams;
-    }
-}
+    }*/

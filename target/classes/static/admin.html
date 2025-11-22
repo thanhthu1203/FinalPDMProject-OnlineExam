@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Manage Online Exam</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h2>Admin Login</h2>
+      <form id="adminLogin">
+        <label>Admin ID</label>
+        <input id="adminId" placeholder="a001" />
+        <label>Password</label>
+        <input id="adminPassword" type="password" />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <div id="adminMessage" style="margin-top:10px;color:#b00020"></div>
+    </section>
+
+    <section id="adminPanel" class="card" style="display:none">
+      <h2>Admin Panel</h2>
+
+      <h3>Students</h3>
+      <div>
+        <button id="refreshStudents" class="btn-primary">Refresh Students</button>
+        <table id="studentsTable" class="exam-table" style="margin-top:10px">
+          <thead><tr><th>ID</th><th>Name</th><th>Phone</th><th>Actions</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <h3 style="margin-top:20px">Create Student</h3>
+      <form id="createStudentForm">
+        <label>Student ID</label><input id="newStudentId" placeholder="s1003" /><br/>
+        <label>Name</label><input id="newStudentName" /><br/>
+        <label>Password</label><input id="newStudentPassword" /><br/>
+        <button type="submit" class="btn-primary">Create Student</button>
+      </form>
+
+      <h3 style="margin-top:20px">Exams</h3>
+      <div>
+        <button id="refreshExams" class="btn-primary">Refresh Exams</button>
+        <table id="examsTable" class="exam-table" style="margin-top:10px">
+          <thead><tr><th>ID</th><th>Course</th><th>Date</th><th>Room</th><th>Actions</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <h3 style="margin-top:20px">Create Exam</h3>
+      <form id="createExamForm">
+        <label>Exam ID</label><input id="newExamId" /><br/>
+        <label>Course ID</label><input id="newExamCourse" /><br/>
+        <label>Type</label><input id="newExamType" /><br/>
+        <label>Datetime (ISO)</label><input id="newExamDate" placeholder="2025-12-15T09:00:00" /><br/>
+        <label>Room</label><input id="newExamRoom" /><br/>
+        <label>Duration</label><input id="newExamDuration" /><br/>
+        <button class="btn-primary" type="submit">Create Exam</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
