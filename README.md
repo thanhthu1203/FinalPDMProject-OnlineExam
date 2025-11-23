@@ -31,6 +31,9 @@
 ### Installation
 
 * Clone the repo
+* THINGS TO DO FOR SETUP:
+  You must install the Database in the code in MYSQL, name it (online_exam_hub) for better access to it
+  Go to appplication.yml and changes username, password and the tail of the url to your database(or you use your url)
 
 ## Usage
 
