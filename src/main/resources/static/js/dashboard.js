@@ -1,4 +1,4 @@
-function getQueryParam(name) {
+/*function getQueryParam(name) {
   const url = new URL(window.location.href);
   return url.searchParams.get(name);
 }
@@ -124,3 +124,4 @@ async function loadDashboard() {
 }
 
 document.addEventListener('DOMContentLoaded', loadDashboard);
+*/
