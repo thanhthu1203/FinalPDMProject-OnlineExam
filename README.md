@@ -19,7 +19,7 @@
 | ITITIU24061  | Phạm Gia Thịnh         |
 | ITCSIU24060  | Phan Thị Kim Ngân      |
 | ITCSIU21095  | Hà Văn Uyển Nhi        |
-| ITITIU20177  | Lê Đỗ Minh Đăng        |
+
 
 
 ## Getting Started
